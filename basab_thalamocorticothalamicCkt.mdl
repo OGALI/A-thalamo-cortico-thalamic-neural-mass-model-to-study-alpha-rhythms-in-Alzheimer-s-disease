@@ -1,0 +1,1792 @@
+Model {
+  Name			  "basab_thalamocorticothalamicCkt"
+  Version		  7.3
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.655"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  Description		  "THE MODEL IS DESIGNED BY BASABDATTA SEN BHATTACHARYA \nAND IS AN INTELLECTUAL PROPERTY OF THE UNIVER"
+  "SITY OF ULSTER, \nNORTHERN IRELAND, UK. \nPLEASE CITE THE FOLLOWING PAPER WHEN USING THE MODEL IN YOUR WORK:\nSen Bh"
+  "attacharya, Basabdatta, Coyle, Damien, Maguire, Liam: \n\"A thalamo-cortico-thalamic neural mass model to study alph"
+  "a rhythms in Alzheimer's \ndisease\", Neural Networks (2011), doi:10.1016/j.neunet.2011.02.009."
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  Created		  "Mon Nov 23 13:23:59 2009"
+  Creator		  "basabb"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "basabb"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Wed May 11 12:18:26 2011"
+  RTWModifiedTimeStamp	  0
+  ModelVersionFormat	  "1.%<AutoIncrement:655>"
+  ConfigurationManager	  "None"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  CovExternalEMLEnable	  off
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.6.0"
+      Array {
+	Type			"Handle"
+	Dimension		8
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.6.0"
+	  StartTime		  "0.0"
+	  StopTime		  "60"
+	  AbsTol		  "auto"
+	  FixedStep		  ".004"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode4"
+	  SolverName		  "ode4"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	  SignalSizeVariationType "Allow only fixed size"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.6.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  off
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SaveOutput		  off
+	  SaveState		  off
+	  SignalLogging		  off
+	  InspectSignalLogs	  off
+	  SaveTime		  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  StrengthReduction	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.6.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "none"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "none"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  StrictBusMsg		  "Warning"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.6.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.6.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  8
+	  Version		  "1.6.0"
+	  SFSimEnableDebug	  on
+	  SFSimOverflowDetection  on
+	  SFSimEcho		  on
+	  SimBlas		  on
+	  SimUseLocalCustomCode	  off
+	  SimBuildMode		  "sf_incremental_build"
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  9
+	  Version		  "1.6.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  on
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  CheckMdlBeforeBuild	  "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      10
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		17
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      11
+	      Version		      "1.6.0"
+	      Array {
+		Type			"Cell"
+		Dimension		16
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"CombineOutputUpdateFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"MultiInstanceERTCode"
+		Cell			"PurelyIntegerCode"
+		Cell			"SupportNonFinite"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PortableWordSizes"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    " [ 200, 45, 1080, 675 ] "
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "fixdt(1,16,0)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      "M-S-Function"
+      FunctionName	      "mlfile"
+      DisplayMFileStacktrace  on
+    }
+    Block {
+      BlockType		      Scope
+      ModelBased	      off
+      TickLabels	      "OneTimeTick"
+      ZoomMode		      "on"
+      Grid		      "on"
+      TimeRange		      "auto"
+      YMin		      "-5"
+      YMax		      "5"
+      SaveToWorkspace	      off
+      SaveName		      "ScopeData"
+      LimitDataPoints	      on
+      MaxDataPoints	      "5000"
+      Decimation	      "1"
+      SampleInput	      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ZeroPole
+      Zeros		      "[1]"
+      Poles		      "[0 1]"
+      Gain		      "[1]"
+      AbsoluteTolerance	      "auto"
+      ContinuousStateAttributes	"''"
+    }
+  }
+  System {
+    Name		    "basab_thalamocorticothalamicCkt"
+    Location		    [2, 82, 1270, 674]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "portrait"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "72"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Gain
+      Name		      "Cfli"
+      Position		      [1490, 583, 1550, 627]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "13.5"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cfpe"
+      Position		      [1570, 626, 1630, 664]
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "40.5"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cice"
+      Position		      [285, 459, 320, 501]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "29"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cire"
+      Position		      [266, 380, 304, 425]
+      BlockRotation	      270
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "47.4"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cisi"
+      Position		      [215, 340, 255, 380]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "23.6"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Clpe"
+      Position		      [1555, 458, 1630, 502]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "33.75"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cnce"
+      Position		      [815, 230, 855, 270]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "50"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cnsi"
+      Position		      [885, 230, 925, 270]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "15"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cnte"
+      Position		      [742, 230, 788, 270]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "35"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cpce"
+      Position		      [1320, 236, 1360, 264]
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cpfi"
+      Position		      [1235, 329, 1300, 371]
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "108"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cpli"
+      Position		      [1280, 376, 1350, 424]
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "33.75"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cpte"
+      Position		      [1055, 278, 1120, 322]
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "80"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cpxe"
+      Position		      [1216, 140, 1264, 185]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "108"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Ctii"
+      Position		      [350, 167, 415, 203]
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "15.45"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Ctni"
+      Position		      [345, 221, 410, 259]
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "15.45"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Ctpe"
+      Position		      [372, 310, 418, 360]
+      BlockRotation	      270
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "62"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Ctre"
+      Position		      [355, 113, 415, 147]
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "7.1"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Cxpe"
+      Position		      [1600, 84, 1655, 116]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Gain		      "135"
+      ParameterDataTypeMode   "Inherit via internal rule"
+      ParameterDataType	      "fixdt(1, 16)"
+      ParameterScaling	      "2^0"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^0"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      ZeroPole
+      Name		      "EPSP-ExIN"
+      Position		      [1315, 76, 1410, 124]
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      Zeros		      "[]"
+      Poles		      "[-40 -40]"
+      Gain		      "[40* 0.0027]"
+    }
+    Block {
+      BlockType		      ZeroPole
+      Name		      "EPSP-Glu-TCR"
+      Position		      [625, 174, 720, 216]
+      FontName		      "Arial"
+      FontSize		      12
+      Zeros		      "[]"
+      Poles		      "[-100 -100]"
+      Gain		      "[0.00325*100]"
+    }
+    Block {
+      BlockType		      ZeroPole
+      Name		      "EPSP-Glu-retina"
+      Position		      [155, 109, 250, 151]
+      FontName		      "Arial"
+      FontSize		      12
+      Zeros		      "[]"
+      Poles		      "[-100 -100]"
+      Gain		      "[0.00325*100]"
+    }
+    Block {
+      BlockType		      ZeroPole
+      Name		      "EPSP-PY"
+      Position		      [1585, 276, 1680, 324]
+      FontName		      "Arial"
+      FontSize		      12
+      Zeros		      "[]"
+      Poles		      "[-40 -40]"
+      Gain		      "[40* 0.0027]"
+    }
+    Block {
+      BlockType		      ZeroPole
+      Name		      "EPSP-corticocorticalinput"
+      Position		      [1210, 228, 1295, 272]
+      FontName		      "Arial"
+      FontSize		      12
+      Zeros		      "[]"
+      Poles		      "[-40 -40]"
+      Gain		      "[40* 0.0027]"
+    }
+    Block {
+      BlockType		      "M-S-Function"
+      Name		      "ExtrinsicInp"
+      Description	      "Input to the model with or without noise. The order of input parameters in the Dialog box is:"
+      "                      \nmean, standard deviation, length of signal,flag,constant.                               "
+      "                           \nIf flag is 0, the input is a constant devoid of any noise. However, if flag is 1, t"
+      "he noise is added to the signal."
+      Ports		      [0, 1]
+      Position		      [1100, 176, 1140, 214]
+      FontName		      "Arial"
+      FontSize		      12
+      FunctionName	      "myinput_ver1"
+      Parameters	      "30,5,60000,1"
+      MaskDisplay	      "plot(312+randn(1,25))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "FastInhibINpopSoma"
+      Ports		      [2, 1]
+      Position		      [1430, 585, 1460, 665]
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      Inputs		      "-+"
+      CollapseMode	      "Specified dimension"
+      CollapseDim	      "4"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^-10"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "INpopSoma"
+      Ports		      [3, 1]
+      Position		      [165, 405, 210, 495]
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      Inputs		      "-++"
+      CollapseMode	      "Specified dimension"
+      CollapseDim	      "4"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^-10"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      ZeroPole
+      Name		      "IPSP-GABA-IN"
+      Position		      [90, 284, 185, 326]
+      FontName		      "Arial"
+      FontSize		      12
+      Zeros		      "[]"
+      Poles		      "[-40 -40]"
+      Gain		      "[0.022*40]"
+    }
+    Block {
+      BlockType		      ZeroPole
+      Name		      "IPSP-GABA-TRN"
+      Position		      [590, 369, 685, 411]
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      Zeros		      "[]"
+      Poles		      "[-40 -40]"
+      Gain		      "[0.022*40]"
+    }
+    Block {
+      BlockType		      ZeroPole
+      Name		      "IPSP-fastIN"
+      Position		      [1190, 602, 1300, 648]
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      Zeros		      "[]"
+      Poles		      "[-300 -300]"
+      Gain		      "[300*0.039]"
+    }
+    Block {
+      BlockType		      ZeroPole
+      Name		      "IPSP-slowIN"
+      Position		      [1295, 457, 1425, 503]
+      BlockMirror	      on
+      FontName		      "Arial"
+      FontSize		      12
+      Zeros		      "[]"
+      Poles		      "[-20 -20]"
+      Gain		      "[20*0.0045]"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "PyramidpopSoma"
+      Ports		      [5, 1]
+      Position		      [1400, 179, 1435, 421]
+      FontName		      "Arial"
+      FontSize		      12
+      Inputs		      "+++--"
+      CollapseMode	      "Specified dimension"
+      CollapseDim	      "4"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^-10"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      "M-S-Function"
+      Name		      "SensInp"
+      Description	      "Input to the model with or without noise. The order of input parameters in the Dialog box is:"
+      "                      \nmean, standard deviation, length of signal,flag,constant.                               "
+      "                           \nIf flag is 0, the input is a constant devoid of any noise. However, if flag is 1, t"
+      "he noise is added to the signal."
+      Ports		      [0, 1]
+      Position		      [60, 111, 100, 149]
+      FontName		      "Arial"
+      FontSize		      12
+      FunctionName	      "myinput_ver1"
+      Parameters	      "11,5,60000,1"
+      MaskDisplay	      "plot(312+randn(1,25))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      "M-S-Function"
+      Name		      "TCR sigmoid1"
+      Ports		      [1, 1]
+      Position		      [80, 432, 130, 468]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      FontName		      "Arial"
+      FontSize		      12
+      FunctionName	      "mysigmoid_ver1"
+      Parameters	      "2.5,560,0.006"
+      MaskDisplay	      "plot(1./(1+exp(-0.75.*([1:25]-12))))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      "M-S-Function"
+      Name		      "TCR sigmoid2"
+      Ports		      [1, 1]
+      Position		      [1480, 279, 1535, 321]
+      NamePlacement	      "alternate"
+      ShowName		      off
+      FontName		      "Arial"
+      FontSize		      12
+      FunctionName	      "mysigmoid_ver1"
+      Parameters	      "2.5,560,0.006"
+      MaskDisplay	      "plot(1./(1+exp(-0.75.*([1:25]-12))))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      "M-S-Function"
+      Name		      "TCR sigmoid3"
+      Ports		      [1, 1]
+      Position		      [1480, 80, 1540, 120]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      FontName		      "Arial"
+      FontSize		      12
+      FunctionName	      "mysigmoid_ver1"
+      Parameters	      "2.5,560,0.006"
+      MaskDisplay	      "plot(1./(1+exp(-0.75.*([1:25]-12))))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      "M-S-Function"
+      Name		      "TCR sigmoid4"
+      Ports		      [1, 1]
+      Position		      [1465, 461, 1515, 499]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      FontName		      "Arial"
+      FontSize		      12
+      FunctionName	      "mysigmoid_ver1"
+      Parameters	      "2.5,560,0.006"
+      MaskDisplay	      "plot(1./(1+exp(-0.75.*([1:25]-12))))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      "M-S-Function"
+      Name		      "TCR sigmoid5"
+      Ports		      [1, 1]
+      Position		      [1335, 604, 1390, 646]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      FontName		      "Arial"
+      FontSize		      12
+      FunctionName	      "mysigmoid_ver1"
+      Parameters	      "2.5,560,0.006"
+      MaskDisplay	      "plot(1./(1+exp(-0.75.*([1:25]-12))))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "TCRpopSoma"
+      Ports		      [4, 1]
+      Position		      [445, 104, 500, 321]
+      FontName		      "Arial"
+      FontSize		      12
+      Inputs		      "+--+"
+      CollapseMode	      "Specified dimension"
+      CollapseDim	      "4"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^-10"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "TRNPopSoma"
+      Ports		      [3, 1]
+      Position		      [727, 290, 943, 320]
+      BlockRotation	      270
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      FontSize		      12
+      Inputs		      "++-"
+      CollapseMode	      "Specified dimension"
+      CollapseDim	      "4"
+      InputSameDT	      off
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1, 16)"
+      OutScaling	      "2^-10"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Thalamicoutput"
+      Ports		      [1]
+      Position		      [660, 106, 695, 134]
+      FontName		      "Arial"
+      FontSize		      12
+      Floating		      off
+      Location		      [6, 187, 567, 508]
+      Open		      off
+      NumInputPorts	      "1"
+      TickLabels	      "on"
+      ZoomMode		      "xonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      TimeRange		      "60"
+      YMin		      "0.00016"
+      YMax		      "0.000171"
+      SaveToWorkspace	      on
+      SaveName		      "thalamicoutput"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleInput	      on
+      SampleTime	      "0.004"
+    }
+    Block {
+      BlockType		      "M-S-Function"
+      Name		      "VpotToFiringRate"
+      Ports		      [1, 1]
+      Position		      [535, 195, 585, 235]
+      FontName		      "Arial"
+      FontSize		      12
+      FunctionName	      "mysigmoid_ver1"
+      Parameters	      "2.5,560,0.006"
+      MaskDisplay	      "plot(1./(1+exp(-0.75.*([1:25]-12))))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      "M-S-Function"
+      Name		      "VpotToFiringRate1"
+      Ports		      [1, 1]
+      Position		      [740, 370, 790, 410]
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      ShowName		      off
+      FontName		      "Arial"
+      FontSize		      12
+      FunctionName	      "mysigmoid_ver1"
+      Parameters	      "2.5,560,0.006"
+      MaskDisplay	      "plot(1./(1+exp(-0.75.*([1:25]-12))))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskPortRotate	      "default"
+      MaskIconUnits	      "autoscale"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "corticaloutput"
+      Ports		      [1]
+      Position		      [1620, 188, 1650, 222]
+      FontName		      "Arial"
+      FontSize		      12
+      Floating		      off
+      Location		      [589, 187, 1083, 497]
+      Open		      off
+      NumInputPorts	      "1"
+      ZoomMode		      "yonly"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      YMin		      "0.00865"
+      YMax		      "0.008825"
+      SaveToWorkspace	      on
+      SaveName		      "corticaloutput"
+      DataFormat	      "StructureWithTime"
+      LimitDataPoints	      off
+      SampleInput	      on
+      SampleTime	      "0.004"
+    }
+    Line {
+      SrcBlock		      "Ctre"
+      SrcPort		      1
+      DstBlock		      "TCRpopSoma"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "SensInp"
+      SrcPort		      1
+      DstBlock		      "EPSP-Glu-retina"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "EPSP-Glu-retina"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"Ctre"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Cire"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "TCRpopSoma"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"VpotToFiringRate"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -95]
+	DstBlock		"Thalamicoutput"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "INpopSoma"
+      SrcPort		      1
+      DstBlock		      "TCR sigmoid1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Cire"
+      SrcPort		      1
+      Points		      [0, 20]
+      DstBlock		      "INpopSoma"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "TCR sigmoid1"
+      SrcPort		      1
+      Points		      [-20, 0; 0, -145]
+      DstBlock		      "IPSP-GABA-IN"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "IPSP-GABA-IN"
+      SrcPort		      1
+      Points		      [45, 0]
+      Branch {
+	Points			[65, 0; 0, -120]
+	DstBlock		"Ctii"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Cisi"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "TRNPopSoma"
+      SrcPort		      1
+      Points		      [0, 65]
+      DstBlock		      "VpotToFiringRate1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "VpotToFiringRate"
+      SrcPort		      1
+      Points		      [20, 0]
+      DstBlock		      "EPSP-Glu-TCR"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Cnte"
+      SrcPort		      1
+      DstBlock		      "TRNPopSoma"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "VpotToFiringRate1"
+      SrcPort		      1
+      DstBlock		      "IPSP-GABA-TRN"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "IPSP-GABA-TRN"
+      SrcPort		      1
+      Points		      [-70, 0]
+      Branch {
+	Points			[-195, 0; 0, -150]
+	DstBlock		"Ctni"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 55; 435, 0; 0, -270; -45, 0]
+	DstBlock		"Cnsi"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Cnce"
+      SrcPort		      1
+      DstBlock		      "TRNPopSoma"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Ctii"
+      SrcPort		      1
+      DstBlock		      "TCRpopSoma"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Ctni"
+      SrcPort		      1
+      DstBlock		      "TCRpopSoma"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Ctpe"
+      SrcPort		      1
+      Points		      [0, -10]
+      DstBlock		      "TCRpopSoma"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Cisi"
+      SrcPort		      1
+      Points		      [0, 35]
+      DstBlock		      "INpopSoma"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Cice"
+      SrcPort		      1
+      DstBlock		      "INpopSoma"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Cnsi"
+      SrcPort		      1
+      DstBlock		      "TRNPopSoma"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "EPSP-Glu-TCR"
+      SrcPort		      1
+      Points		      [40, 0]
+      Branch {
+	Points			[0, 0]
+	DstBlock		"Cnte"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -85; 265, 0; 0, 190]
+	DstBlock		"Cpte"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "PyramidpopSoma"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"TCR sigmoid2"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -95]
+	DstBlock		"corticaloutput"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "TCR sigmoid2"
+      SrcPort		      1
+      DstBlock		      "EPSP-PY"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Cxpe"
+      SrcPort		      1
+      DstBlock		      "TCR sigmoid3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "TCR sigmoid3"
+      SrcPort		      1
+      DstBlock		      "EPSP-ExIN"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Clpe"
+      SrcPort		      1
+      DstBlock		      "TCR sigmoid4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "TCR sigmoid4"
+      SrcPort		      1
+      DstBlock		      "IPSP-slowIN"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "IPSP-slowIN"
+      SrcPort		      1
+      Points		      [-75, 0]
+      Branch {
+	Points			[0, -80]
+	DstBlock		"Cpli"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, 55; 370, 0; 0, 70]
+	DstBlock		"Cfli"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Cfli"
+      SrcPort		      1
+      DstBlock		      "FastInhibINpopSoma"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "TCR sigmoid5"
+      SrcPort		      1
+      DstBlock		      "IPSP-fastIN"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "IPSP-fastIN"
+      SrcPort		      1
+      Points		      [-10, 0; 0, -275]
+      DstBlock		      "Cpfi"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "EPSP-ExIN"
+      SrcPort		      1
+      Points		      [-70, 0]
+      DstBlock		      "Cpxe"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "EPSP-PY"
+      SrcPort		      1
+      Points		      [20, 0]
+      Branch {
+	Points			[0, 125]
+	Branch {
+	  DstBlock		  "Clpe"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [0, 220]
+	  DstBlock		  "Cfpe"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	Points			[0, -200]
+	DstBlock		"Cxpe"
+	DstPort			1
+      }
+      Branch {
+	Points			[35, 0; 0, 395; -1345, 0; 0, -215]
+	Branch {
+	  DstBlock		  "Ctpe"
+	  DstPort		  1
+	}
+	Branch {
+	  DstBlock		  "Cice"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [595, 0; 0, -335; -155, 0]
+	  DstBlock		  "Cnce"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "FastInhibINpopSoma"
+      SrcPort		      1
+      DstBlock		      "TCR sigmoid5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Cfpe"
+      SrcPort		      1
+      DstBlock		      "FastInhibINpopSoma"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "ExtrinsicInp"
+      SrcPort		      1
+      Points		      [20, 0; 0, 55]
+      DstBlock		      "EPSP-corticocorticalinput"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Cpxe"
+      SrcPort		      1
+      Points		      [0, 10]
+      DstBlock		      "PyramidpopSoma"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "EPSP-corticocorticalinput"
+      SrcPort		      1
+      DstBlock		      "Cpce"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Cpfi"
+      SrcPort		      1
+      DstBlock		      "PyramidpopSoma"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Cpli"
+      SrcPort		      1
+      DstBlock		      "PyramidpopSoma"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Cpte"
+      SrcPort		      1
+      DstBlock		      "PyramidpopSoma"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Cpce"
+      SrcPort		      1
+      DstBlock		      "PyramidpopSoma"
+      DstPort		      2
+    }
+    Annotation {
+      Position		      [195, 151]
+      FontName		      "Arial"
+      FontSize		      12
+    }
+  }
+}
+# Finite State Machines
+#
+#    Stateflow Version 7.1 (R2009a) dated Jan 28 2009, 05:16:58
+#
+#
+
+
+Stateflow {
+  machine {
+    id			    1
+    name		    "basab_thalamocorticothalamicCkt"
+    created		    "28-Apr-2010 11:09:40"
+    isLibrary		    0
+    firstTarget		    2
+    sfVersion		    71014000.000008
+  }
+  target {
+    id			    2
+    name		    "sfun"
+    codeFlags		    ""
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}
