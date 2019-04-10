@@ -6,7 +6,7 @@ t = corticaloutput.time;
 
 %% Thalamic output
 clear all, close all, clc;
-load('InitialRun_250Hz_60s.mat')
+load('precompiledRuns/InitialRun_250Hz_60s.mat')
 fs = 250;
 t = corticaloutput.time;
 
@@ -29,7 +29,7 @@ ylabel('PSD (dB/Hz)')
 clear all, close all, clc
 fs = 250;
 
-load('InitialRun_250Hz_60s.mat')
+load('precompiledRuns/InitialRun_250Hz_60s.mat')
 t = corticaloutput.time;
 
 figure
@@ -39,7 +39,7 @@ plot(f,10*log10(pxx))
 xlabel('Frequency (Hz)')
 ylabel('PSD (dB/Hz)')
 
-load('lowConnectivity.mat')
+load('../precompiledRuns/lowConnectivity.mat')
 [pxx,f] = pwelch(corticaloutput.signals.values,500,300,500,fs);
 plot(f,10*log10(pxx))
 xlabel('Frequency (Hz)')

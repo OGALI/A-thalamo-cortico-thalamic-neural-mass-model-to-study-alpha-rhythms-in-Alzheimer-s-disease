@@ -6,7 +6,7 @@ t = corticaloutput.time;
 
 %% Thalamic output
 clear all, close all, clc;
-
+load('precompiledRun/InitialRun_250Hz_60s.mat')
 fs = 250;
 t = corticaloutput.time;
 
