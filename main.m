@@ -1,8 +1,43 @@
-%clear all,
-close all, clc;
 
+%% Isolated thalamic output
+clear all, close all, clc;
 fs = 250;
-t = corticaloutput.time;
+
+figure
+hold on
+load('precompiledRuns/thalamicIsolated.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
+[pxx f] = pwelch(filtered,1/2*fs,[],[],250);
+pxx = abs(pxx)./mean(pxx);
+plot(f,10*log10(pxx),'LineWidth', 3)
+ 
+load('precompiledRuns/thalamicIsolatedLow.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
+[pxx f] = pwelch(filtered,1/2*fs,[],[],250);
+pxx = abs(pxx)./mean(pxx);
+plot(f,10*log10(pxx),'LineWidth', 3)
+
+load('precompiledRuns/lowRetina.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
+[pxx f] = pwelch(filtered,1/2*fs,[],[],250);
+pxx = abs(pxx)./mean(pxx);
+plot(f,10*log10(pxx),'LineWidth', 3)
+
+
+xlim([0 20])
+lgd = legend('Base value','Decrease in connectivity (75%)','Decrease in connectivity (50%)','location','best')
+lgd.FontSize = 14;
+xlabel('Frequency (Hz)','fontsize',14)
+ylabel('Relative Power Density','fontsize',14)
+ title('Power spectra analysis','fontsize',18)
+
+ 
+ %% Isolated Cortical output
+clear all, close all, clc;
+load('precompiledRuns/thalamicIsolated.mat')
+fs = 250;
+t = thalamicoutput.time;
+
 
 %% Thalamic output
 clear all, close all, clc;
