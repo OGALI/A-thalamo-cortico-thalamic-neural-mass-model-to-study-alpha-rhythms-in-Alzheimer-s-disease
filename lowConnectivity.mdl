@@ -1,12 +1,12 @@
 Model {
-  Name			  "basab_thalamocorticothalamicCkt"
+  Name			  "lowConnectivity"
   Version		  9.3
   SavedCharacterEncoding  "ISO-8859-1"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.656"
+    ComputedModelVersion    "1.657"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -21,11 +21,11 @@ Model {
     NumExternalFileReferences 0
     OrderedModelArguments   1
   }
-  SLCCPlugin		  "on"
   WebScopes_FoundationPlugin "on"
   DiagnosticSuppressor	  "on"
-  LogicAnalyzerPlugin	  "on"
+  SLCCPlugin		  "on"
   NotesPlugin		  "on"
+  LogicAnalyzerPlugin	  "on"
   Description		  "THE MODEL IS DESIGNED BY BASABDATTA SEN BHATTACHARYA \nAND IS AN INTELLECTUAL PROPERTY OF THE UNIVER"
   "SITY OF ULSTER, \nNORTHERN IRELAND, UK. \nPLEASE CITE THE FOLLOWING PAPER WHEN USING THE MODEL IN YOUR WORK:\nSen Bh"
   "attacharya, Basabdatta, Coyle, Damien, Maguire, Liam: \n\"A thalamo-cortico-thalamic neural mass model to study alph"
@@ -50,7 +50,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [3074.0, 194.0, 2316.0, 1172.0]
+      Location		      [0.0, 23.0, 1680.0, 1027.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -59,7 +59,7 @@ Model {
 	DockPosition		"Left"
 	Width			[50]
 	Height			[50]
-	Filter			[8]
+	Filter			[9]
 	Minimized		"On"
       }
       Object {
@@ -75,7 +75,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[2241.0, 996.0]
+	Extents			[1566.0, 851.0]
 	ZoomFactor		[1.0]
 	Offset			[-102.47113586743137, -108.22381936915582]
       }
@@ -96,11 +96,11 @@ Model {
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABqAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABrAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAjnAAAEHwAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
+      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAZEAAADjgAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
       "gBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIATABlAGYAdAMAAAAA/////wAAAAAAAAAAAAAAAQAAAAEAAAA4AGMAbwBsAGwAYQBwAHMAaQBiA"
-      "GwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQCAAAAAP////8AAAAAAAAAAAAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "GwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQDAAAAAP////8AAAAAAAAAAAAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAACE/////wAAAAAAAAAA/////wEAAAD2/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAF6/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAPg/////wAAAAAAAAAA/"
@@ -115,9 +115,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "alinajmaldin"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Apr 07 01:01:28 2019"
-  RTWModifiedTimeStamp	  476491670
-  ModelVersionFormat	  "1.%<AutoIncrement:656>"
+  LastModifiedDate	  "Mon Apr 08 12:48:49 2019"
+  RTWModifiedTimeStamp	  476628442
+  ModelVersionFormat	  "1.%<AutoIncrement:657>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -173,11 +173,11 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "basab_thalamocorticothalamicCkt"
+    model_		    "lowConnectivity"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "basab_thalamocorticothalamicCkt"
+      Cell		      "lowConnectivity"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -787,7 +787,7 @@ Model {
 	      Version		      "19.0.0"
 	      Array {
 		Type			"Cell"
-		Dimension		19
+		Dimension		18
 		Cell			"IncludeMdlTerminateFcn"
 		Cell			"RemoveResetFunc"
 		Cell			"SuppressErrorStatus"
@@ -806,7 +806,6 @@ Model {
 		Cell			"GenerateAllocFcn"
 		Cell			"ExistingSharedCode"
 		Cell			"RemoveDisableFunc"
-		Cell			"CombineOutputUpdateFcns"
 		PropName		"DisabledProps"
 	      }
 	      Description	      ""
@@ -1063,8 +1062,8 @@ Model {
     }
   }
   System {
-    Name		    "basab_thalamocorticothalamicCkt"
-    Location		    [3074, 194, 5390, 1366]
+    Name		    "lowConnectivity"
+    Location		    [0, 23, 1680, 1050]
     Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -1122,7 +1121,7 @@ Model {
       NamePlacement	      "alternate"
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "29"
+      Gain		      "10"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1137,7 +1136,7 @@ Model {
       BlockMirror	      on
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "47.4"
+      Gain		      "10"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1153,7 +1152,7 @@ Model {
       NamePlacement	      "alternate"
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "23.6"
+      Gain		      "10"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1184,7 +1183,7 @@ Model {
       NamePlacement	      "alternate"
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "50"
+      Gain		      "25"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1200,7 +1199,7 @@ Model {
       NamePlacement	      "alternate"
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "15"
+      Gain		      "5"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1216,7 +1215,7 @@ Model {
       NamePlacement	      "alternate"
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "35"
+      Gain		      "20"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1300,7 +1299,7 @@ Model {
       NamePlacement	      "alternate"
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "15.45"
+      Gain		      "5"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1314,7 +1313,7 @@ Model {
       NamePlacement	      "alternate"
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "15.45"
+      Gain		      "5"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1329,7 +1328,7 @@ Model {
       NamePlacement	      "alternate"
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "62"
+      Gain		      "40"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1343,7 +1342,7 @@ Model {
       NamePlacement	      "alternate"
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "7.1"
+      Gain		      "5"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -2236,7 +2235,7 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "basab_thalamocorticothalamicCkt"
+    name		    "lowConnectivity"
     sfVersion		    80000015
     firstTarget		    2
   }
