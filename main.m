@@ -32,12 +32,26 @@ ylabel('Relative Power Density','fontsize',14)
  title('Power spectra analysis','fontsize',18)
 
  
- %% Isolated Cortical output
+ %% Full module
 clear all, close all, clc;
-load('precompiledRuns/thalamicIsolated.mat')
-fs = 250;
-t = thalamicoutput.time;
 
+fs = 250;
+
+figure
+hold on
+load('precompiledRuns/InitialRun_250Hz_60s.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
+[pxx f] = pwelch(filtered,1/2*fs,[],[],250);
+pxx = abs(pxx)./mean(pxx);
+plot(f,10*log10(pxx),'LineWidth', 3)
+
+load('precompiledRuns/fullModuleSlow.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
+[pxx f] = pwelch(filtered,1/2*fs,[],[],250);
+pxx = abs(pxx)./mean(pxx);
+plot(f,10*log10(pxx),'LineWidth', 3)
+
+xlim([0 20])
 
 %% Thalamic output
 clear all, close all, clc;
