@@ -1,5 +1,5 @@
 Model {
-  Name			  "fullModuleSlow"
+  Name			  "corticalBaseLine"
   Version		  9.3
   SavedCharacterEncoding  "ISO-8859-1"
   GraphicalInterface {
@@ -50,7 +50,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [3063.0, 121.0, 2316.0, 1172.0]
+      Location		      [3074.0, 194.0, 2316.0, 1172.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -115,8 +115,8 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "alinajmaldin"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Apr 11 12:20:43 2019"
-  RTWModifiedTimeStamp	  476885641
+  LastModifiedDate	  "Thu Apr 11 21:34:53 2019"
+  RTWModifiedTimeStamp	  476919222
   ModelVersionFormat	  "1.%<AutoIncrement:657>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -173,11 +173,11 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "fullModuleSlow"
+    model_		    "corticalBaseLine"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "fullModuleSlow"
+      Cell		      "corticalBaseLine"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1062,8 +1062,8 @@ Model {
     }
   }
   System {
-    Name		    "fullModuleSlow"
-    Location		    [3063, 121, 5379, 1293]
+    Name		    "corticalBaseLine"
+    Location		    [3074, 194, 5390, 1366]
     Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -1113,52 +1113,6 @@ Model {
     }
     Block {
       BlockType		      Gain
-      Name		      "Cice"
-      SID		      "3"
-      Position		      [285, 459, 320, 501]
-      ZOrder		      -3
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      FontName		      "Arial"
-      FontSize		      12
-      Gain		      "29"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Cire"
-      SID		      "4"
-      Position		      [266, 380, 304, 425]
-      ZOrder		      -4
-      BlockRotation	      270
-      BlockMirror	      on
-      FontName		      "Arial"
-      FontSize		      12
-      Gain		      "20"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Cisi"
-      SID		      "5"
-      Position		      [215, 340, 255, 380]
-      ZOrder		      -5
-      BlockRotation	      270
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      FontName		      "Arial"
-      FontSize		      12
-      Gain		      "23.6"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Gain
       Name		      "Clpe"
       SID		      "6"
       Position		      [1555, 458, 1630, 502]
@@ -1168,54 +1122,6 @@ Model {
       FontName		      "Arial"
       FontSize		      12
       Gain		      "33.75"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Cnce"
-      SID		      "7"
-      Position		      [815, 230, 855, 270]
-      ZOrder		      -7
-      BlockRotation	      270
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      FontName		      "Arial"
-      FontSize		      12
-      Gain		      "50"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Cnsi"
-      SID		      "8"
-      Position		      [885, 230, 925, 270]
-      ZOrder		      -8
-      BlockRotation	      270
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      FontName		      "Arial"
-      FontSize		      12
-      Gain		      "15"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Cnte"
-      SID		      "9"
-      Position		      [742, 230, 788, 270]
-      ZOrder		      -9
-      BlockRotation	      270
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      FontName		      "Arial"
-      FontSize		      12
-      Gain		      "35"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1292,62 +1198,6 @@ Model {
     }
     Block {
       BlockType		      Gain
-      Name		      "Ctii"
-      SID		      "15"
-      Position		      [350, 167, 415, 203]
-      ZOrder		      -15
-      NamePlacement	      "alternate"
-      FontName		      "Arial"
-      FontSize		      12
-      Gain		      "15.45"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Ctni"
-      SID		      "16"
-      Position		      [345, 221, 410, 259]
-      ZOrder		      -16
-      NamePlacement	      "alternate"
-      FontName		      "Arial"
-      FontSize		      12
-      Gain		      "15.45"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Ctpe"
-      SID		      "17"
-      Position		      [372, 310, 418, 360]
-      ZOrder		      -17
-      BlockRotation	      270
-      NamePlacement	      "alternate"
-      FontName		      "Arial"
-      FontSize		      12
-      Gain		      "62"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Gain
-      Name		      "Ctre"
-      SID		      "18"
-      Position		      [355, 113, 415, 147]
-      ZOrder		      -18
-      NamePlacement	      "alternate"
-      FontName		      "Arial"
-      FontSize		      12
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Gain
       Name		      "Cxpe"
       SID		      "19"
       Position		      [1600, 84, 1655, 116]
@@ -1373,30 +1223,6 @@ Model {
       Zeros		      "[]"
       Poles		      "[-40 -40]"
       Gain		      "[40* 0.0027]"
-    }
-    Block {
-      BlockType		      ZeroPole
-      Name		      "EPSP-Glu-TCR"
-      SID		      "21"
-      Position		      [625, 174, 720, 216]
-      ZOrder		      -21
-      FontName		      "Arial"
-      FontSize		      12
-      Zeros		      "[]"
-      Poles		      "[-100 -100]"
-      Gain		      "[0.00325*100]"
-    }
-    Block {
-      BlockType		      ZeroPole
-      Name		      "EPSP-Glu-retina"
-      SID		      "22"
-      Position		      [155, 109, 250, 151]
-      ZOrder		      -22
-      FontName		      "Arial"
-      FontSize		      12
-      Zeros		      "[]"
-      Poles		      "[-100 -100]"
-      Gain		      "[0.00325*100]"
     }
     Block {
       BlockType		      ZeroPole
@@ -1462,48 +1288,6 @@ Model {
       SaturateOnIntegerOverflow	off
     }
     Block {
-      BlockType		      Sum
-      Name		      "INpopSoma"
-      SID		      "27"
-      Ports		      [3, 1]
-      Position		      [165, 405, 210, 495]
-      ZOrder		      -27
-      BlockMirror	      on
-      FontName		      "Arial"
-      FontSize		      12
-      Inputs		      "-++"
-      CollapseMode	      "Specified dimension"
-      CollapseDim	      "4"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      ZeroPole
-      Name		      "IPSP-GABA-IN"
-      SID		      "28"
-      Position		      [90, 284, 185, 326]
-      ZOrder		      -28
-      FontName		      "Arial"
-      FontSize		      12
-      Zeros		      "[]"
-      Poles		      "[-40 -40]"
-      Gain		      "[0.022*40]"
-    }
-    Block {
-      BlockType		      ZeroPole
-      Name		      "IPSP-GABA-TRN"
-      SID		      "29"
-      Position		      [590, 369, 685, 411]
-      ZOrder		      -29
-      BlockMirror	      on
-      FontName		      "Arial"
-      FontSize		      12
-      Zeros		      "[]"
-      Poles		      "[-40 -40]"
-      Gain		      "[0.022*40]"
-    }
-    Block {
       BlockType		      ZeroPole
       Name		      "IPSP-fastIN"
       SID		      "30"
@@ -1547,49 +1331,6 @@ Model {
     }
     Block {
       BlockType		      M-S-Function
-      Name		      "SensInp"
-      SID		      "33"
-      Description	      "Input to the model with or without noise. The order of input parameters in the Dialog box is:"
-      "                      \nmean, standard deviation, length of signal,flag,constant.                               "
-      "                           \nIf flag is 0, the input is a constant devoid of any noise. However, if flag is 1, t"
-      "he noise is added to the signal."
-      Ports		      [0, 1]
-      Position		      [60, 111, 100, 149]
-      ZOrder		      -33
-      FontName		      "Arial"
-      FontSize		      12
-      FunctionName	      "myinput_ver1"
-      Parameters	      "11,5,60000,1"
-      Object {
-	$PropName		"MaskObject"
-	$ObjectID		22
-	$ClassName		"Simulink.Mask"
-	Display			"plot(312+randn(1,25))"
-      }
-    }
-    Block {
-      BlockType		      M-S-Function
-      Name		      "TCR sigmoid1"
-      SID		      "34"
-      Ports		      [1, 1]
-      Position		      [80, 432, 130, 468]
-      ZOrder		      -34
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      ShowName		      off
-      FontName		      "Arial"
-      FontSize		      12
-      FunctionName	      "mysigmoid_ver1"
-      Parameters	      "2.5,560,0.006"
-      Object {
-	$PropName		"MaskObject"
-	$ObjectID		23
-	$ClassName		"Simulink.Mask"
-	Display			"plot(1./(1+exp(-0.75.*([1:25]-12))))"
-      }
-    }
-    Block {
-      BlockType		      M-S-Function
       Name		      "TCR sigmoid2"
       SID		      "35"
       Ports		      [1, 1]
@@ -1603,7 +1344,7 @@ Model {
       Parameters	      "2.5,560,0.006"
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		24
+	$ObjectID		22
 	$ClassName		"Simulink.Mask"
 	Display			"plot(1./(1+exp(-0.75.*([1:25]-12))))"
       }
@@ -1624,7 +1365,7 @@ Model {
       Parameters	      "2.5,560,0.006"
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		25
+	$ObjectID		23
 	$ClassName		"Simulink.Mask"
 	Display			"plot(1./(1+exp(-0.75.*([1:25]-12))))"
       }
@@ -1645,7 +1386,7 @@ Model {
       Parameters	      "2.5,560,0.006"
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		26
+	$ObjectID		24
 	$ClassName		"Simulink.Mask"
 	Display			"plot(1./(1+exp(-0.75.*([1:25]-12))))"
       }
@@ -1666,113 +1407,7 @@ Model {
       Parameters	      "2.5,560,0.006"
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		27
-	$ClassName		"Simulink.Mask"
-	Display			"plot(1./(1+exp(-0.75.*([1:25]-12))))"
-      }
-    }
-    Block {
-      BlockType		      Sum
-      Name		      "TCRpopSoma"
-      SID		      "39"
-      Ports		      [4, 1]
-      Position		      [445, 104, 500, 321]
-      ZOrder		      -39
-      FontName		      "Arial"
-      FontSize		      12
-      Inputs		      "+--+"
-      CollapseMode	      "Specified dimension"
-      CollapseDim	      "4"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Sum
-      Name		      "TRNPopSoma"
-      SID		      "40"
-      Ports		      [3, 1]
-      Position		      [727, 290, 943, 320]
-      ZOrder		      -40
-      BlockRotation	      270
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      FontName		      "Arial"
-      FontSize		      12
-      Inputs		      "++-"
-      CollapseMode	      "Specified dimension"
-      CollapseDim	      "4"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Scope
-      Name		      "Thalamicoutput"
-      SID		      "41"
-      Ports		      [1]
-      Position		      [660, 106, 695, 134]
-      ZOrder		      -41
-      FontName		      "Arial"
-      FontSize		      12
-      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
-      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
-      "ources','WiredSimulink',true,'DataLogging',true,'DataLoggingVariableName','thalamicoutput','DataLoggingSaveForma"
-      "t','StructureWithTime','SampleTime','0.004','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.C"
-      "onfiguration('Visuals','Time Domain',true,'TimeAxisLabels','All','SerializedDisplays',{struct('MinYLimReal','-0."
-      "00858','MaxYLimReal','0.00152','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.00858','LegendVisibility',"
-      "'off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68"
-      "6274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0"
-      ".411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274"
-      "509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LineProp"
-      "ertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'TCRpopSoma'}},'ShowContent',true,'P"
-      "lacement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.00858','MaxYLimReal','0.00152','YLabelReal','',"
-      "'MinYLimMag','0.00000','MaxYLimMag','0.00858','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',"
-      "false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',["
-      "1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.39215686274"
-      "5098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07450"
-      "98039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}"
-      "},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1),'TimeRangeSamples','60','TimeRangeFrames','6"
-      "0'),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Conf"
-      "iguration('Tools','Measurements',true,'Version','2019a')),'Version','2019a','Location',[6 187 567 508])"
-      NumInputPorts	      "1"
-      Floating		      off
-    }
-    Block {
-      BlockType		      M-S-Function
-      Name		      "VpotToFiringRate"
-      SID		      "42"
-      Ports		      [1, 1]
-      Position		      [535, 195, 585, 235]
-      ZOrder		      -42
-      FontName		      "Arial"
-      FontSize		      12
-      FunctionName	      "mysigmoid_ver1"
-      Parameters	      "2.5,560,0.006"
-      Object {
-	$PropName		"MaskObject"
-	$ObjectID		28
-	$ClassName		"Simulink.Mask"
-	Display			"plot(1./(1+exp(-0.75.*([1:25]-12))))"
-      }
-    }
-    Block {
-      BlockType		      M-S-Function
-      Name		      "VpotToFiringRate1"
-      SID		      "43"
-      Ports		      [1, 1]
-      Position		      [740, 370, 790, 410]
-      ZOrder		      -43
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      ShowName		      off
-      FontName		      "Arial"
-      FontSize		      12
-      FunctionName	      "mysigmoid_ver1"
-      Parameters	      "2.5,560,0.006"
-      Object {
-	$PropName		"MaskObject"
-	$ObjectID		29
+	$ObjectID		25
 	$ClassName		"Simulink.Mask"
 	Display			"plot(1./(1+exp(-0.75.*([1:25]-12))))"
       }
@@ -1808,209 +1443,6 @@ Model {
       "','2019a','Location',[627 221 1121 531])"
       NumInputPorts	      "1"
       Floating		      off
-    }
-    Line {
-      ZOrder		      1
-      SrcBlock		      "Ctre"
-      SrcPort		      1
-      DstBlock		      "TCRpopSoma"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      2
-      SrcBlock		      "SensInp"
-      SrcPort		      1
-      DstBlock		      "EPSP-Glu-retina"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      3
-      SrcBlock		      "EPSP-Glu-retina"
-      SrcPort		      1
-      Points		      [30, 0]
-      Branch {
-	ZOrder			4
-	DstBlock		"Ctre"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			5
-	DstBlock		"Cire"
-	DstPort			1
-      }
-    }
-    Line {
-      ZOrder		      6
-      SrcBlock		      "TCRpopSoma"
-      SrcPort		      1
-      Points		      [10, 0]
-      Branch {
-	ZOrder			7
-	DstBlock		"VpotToFiringRate"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			8
-	Points			[0, -95]
-	DstBlock		"Thalamicoutput"
-	DstPort			1
-      }
-    }
-    Line {
-      ZOrder		      9
-      SrcBlock		      "INpopSoma"
-      SrcPort		      1
-      DstBlock		      "TCR sigmoid1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      10
-      SrcBlock		      "Cire"
-      SrcPort		      1
-      Points		      [0, 20]
-      DstBlock		      "INpopSoma"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      11
-      SrcBlock		      "TCR sigmoid1"
-      SrcPort		      1
-      Points		      [-20, 0; 0, -145]
-      DstBlock		      "IPSP-GABA-IN"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      12
-      SrcBlock		      "IPSP-GABA-IN"
-      SrcPort		      1
-      Points		      [45, 0]
-      Branch {
-	ZOrder			13
-	Points			[65, 0; 0, -120]
-	DstBlock		"Ctii"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			14
-	DstBlock		"Cisi"
-	DstPort			1
-      }
-    }
-    Line {
-      ZOrder		      15
-      SrcBlock		      "TRNPopSoma"
-      SrcPort		      1
-      Points		      [0, 65]
-      DstBlock		      "VpotToFiringRate1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      16
-      SrcBlock		      "VpotToFiringRate"
-      SrcPort		      1
-      Points		      [20, 0]
-      DstBlock		      "EPSP-Glu-TCR"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      17
-      SrcBlock		      "Cnte"
-      SrcPort		      1
-      DstBlock		      "TRNPopSoma"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      18
-      SrcBlock		      "VpotToFiringRate1"
-      SrcPort		      1
-      DstBlock		      "IPSP-GABA-TRN"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      19
-      SrcBlock		      "IPSP-GABA-TRN"
-      SrcPort		      1
-      Points		      [-70, 0]
-      Branch {
-	ZOrder			20
-	Points			[-195, 0; 0, -150]
-	DstBlock		"Ctni"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			21
-	Points			[0, 55; 435, 0; 0, -270; -45, 0]
-	DstBlock		"Cnsi"
-	DstPort			1
-      }
-    }
-    Line {
-      ZOrder		      22
-      SrcBlock		      "Cnce"
-      SrcPort		      1
-      DstBlock		      "TRNPopSoma"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      23
-      SrcBlock		      "Ctii"
-      SrcPort		      1
-      DstBlock		      "TCRpopSoma"
-      DstPort		      2
-    }
-    Line {
-      ZOrder		      24
-      SrcBlock		      "Ctni"
-      SrcPort		      1
-      DstBlock		      "TCRpopSoma"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      25
-      SrcBlock		      "Ctpe"
-      SrcPort		      1
-      Points		      [0, -10]
-      DstBlock		      "TCRpopSoma"
-      DstPort		      4
-    }
-    Line {
-      ZOrder		      26
-      SrcBlock		      "Cisi"
-      SrcPort		      1
-      Points		      [0, 35]
-      DstBlock		      "INpopSoma"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      27
-      SrcBlock		      "Cice"
-      SrcPort		      1
-      DstBlock		      "INpopSoma"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      28
-      SrcBlock		      "Cnsi"
-      SrcPort		      1
-      DstBlock		      "TRNPopSoma"
-      DstPort		      3
-    }
-    Line {
-      ZOrder		      29
-      SrcBlock		      "EPSP-Glu-TCR"
-      SrcPort		      1
-      Points		      [40, 0]
-      Branch {
-	ZOrder			30
-	DstBlock		"Cnte"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			31
-	Points			[0, -85; 265, 0; 0, 190]
-	DstBlock		"Cpte"
-	DstPort			1
-      }
     }
     Line {
       ZOrder		      32
@@ -2138,26 +1570,6 @@ Model {
 	DstBlock		"Cxpe"
 	DstPort			1
       }
-      Branch {
-	ZOrder			52
-	Points			[35, 0; 0, 395; -1345, 0; 0, -215]
-	Branch {
-	  ZOrder		  53
-	  DstBlock		  "Ctpe"
-	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  54
-	  DstBlock		  "Cice"
-	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  55
-	  Points		  [595, 0; 0, -335; -155, 0]
-	  DstBlock		  "Cnce"
-	  DstPort		  1
-	}
-      }
     }
     Line {
       ZOrder		      56
@@ -2234,7 +1646,7 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "fullModuleSlow"
+    name		    "corticalBaseLine"
     sfVersion		    80000015
     firstTarget		    2
   }

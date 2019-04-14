@@ -1,5 +1,5 @@
 Model {
-  Name			  "fullModuleSlow"
+  Name			  "basab_thalamocorticothalamicCkt"
   Version		  9.3
   SavedCharacterEncoding  "ISO-8859-1"
   GraphicalInterface {
@@ -21,11 +21,11 @@ Model {
     NumExternalFileReferences 0
     OrderedModelArguments   1
   }
-  SLCCPlugin		  "on"
   WebScopes_FoundationPlugin "on"
   DiagnosticSuppressor	  "on"
-  LogicAnalyzerPlugin	  "on"
+  SLCCPlugin		  "on"
   NotesPlugin		  "on"
+  LogicAnalyzerPlugin	  "on"
   Description		  "THE MODEL IS DESIGNED BY BASABDATTA SEN BHATTACHARYA \nAND IS AN INTELLECTUAL PROPERTY OF THE UNIVER"
   "SITY OF ULSTER, \nNORTHERN IRELAND, UK. \nPLEASE CITE THE FOLLOWING PAPER WHEN USING THE MODEL IN YOUR WORK:\nSen Bh"
   "attacharya, Basabdatta, Coyle, Damien, Maguire, Liam: \n\"A thalamo-cortico-thalamic neural mass model to study alph"
@@ -50,7 +50,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [3063.0, 121.0, 2316.0, 1172.0]
+      Location		      [0.0, 23.0, 1680.0, 1027.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -75,7 +75,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[2202.0, 996.0]
+	Extents			[1566.0, 851.0]
 	ZoomFactor		[1.0]
 	Offset			[-102.47113586743137, -108.22381936915582]
       }
@@ -96,9 +96,9 @@ Model {
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABqAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABrAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAjAAAAEHwAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
+      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAZEAAADjgAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
       "gBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIATABlAGYAdAMAAAAA/////wAAAAAAAAAAAAAAAQAAAAEAAAA4AGMAbwBsAGwAYQBwAHMAaQBiA"
       "GwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQDAAAAAP////8AAAAAAAAAAAAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
@@ -115,8 +115,8 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "alinajmaldin"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Apr 11 12:20:43 2019"
-  RTWModifiedTimeStamp	  476885641
+  LastModifiedDate	  "Thu Apr 11 18:23:17 2019"
+  RTWModifiedTimeStamp	  476903506
   ModelVersionFormat	  "1.%<AutoIncrement:657>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -173,11 +173,11 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "fullModuleSlow"
+    model_		    "basab_thalamocorticothalamicCkt"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "fullModuleSlow"
+      Cell		      "basab_thalamocorticothalamicCkt"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1062,8 +1062,8 @@ Model {
     }
   }
   System {
-    Name		    "fullModuleSlow"
-    Location		    [3063, 121, 5379, 1293]
+    Name		    "basab_thalamocorticothalamicCkt"
+    Location		    [0, 23, 1680, 1050]
     Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
@@ -1136,7 +1136,7 @@ Model {
       BlockMirror	      on
       FontName		      "Arial"
       FontSize		      12
-      Gain		      "20"
+      Gain		      "55"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1342,6 +1342,7 @@ Model {
       NamePlacement	      "alternate"
       FontName		      "Arial"
       FontSize		      12
+      Gain		      "15"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -2234,7 +2235,7 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "fullModuleSlow"
+    name		    "basab_thalamocorticothalamicCkt"
     sfVersion		    80000015
     firstTarget		    2
   }
