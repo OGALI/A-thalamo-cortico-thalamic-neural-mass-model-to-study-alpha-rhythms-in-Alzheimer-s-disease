@@ -21,7 +21,7 @@ window. You will notice variables appear in your Matlab workspace; they represen
 
 1) open the main.m file and run the script; it will use data from runs that were simulated on my computer to do the plots (data located in precompiledRuns/).
 
-## Authors
+## Author
 * **Ali Najmaldin**
 
 ## Acknowledgments
