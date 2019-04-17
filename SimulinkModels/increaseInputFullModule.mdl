@@ -1,12 +1,12 @@
 Model {
-  Name			  "basab_thalamocorticothalamicCkt"
+  Name			  "increaseInputFullModule"
   Version		  9.3
   SavedCharacterEncoding  "ISO-8859-1"
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.657"
+    ComputedModelVersion    "1.658"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -21,15 +21,12 @@ Model {
     NumExternalFileReferences 0
     OrderedModelArguments   1
   }
+  SLCCPlugin		  "on"
   WebScopes_FoundationPlugin "on"
   DiagnosticSuppressor	  "on"
-  SLCCPlugin		  "on"
-  NotesPlugin		  "on"
   LogicAnalyzerPlugin	  "on"
-  Description		  "THE MODEL IS DESIGNED BY BASABDATTA SEN BHATTACHARYA \nAND IS AN INTELLECTUAL PROPERTY OF THE UNIVER"
-  "SITY OF ULSTER, \nNORTHERN IRELAND, UK. \nPLEASE CITE THE FOLLOWING PAPER WHEN USING THE MODEL IN YOUR WORK:\nSen Bh"
-  "attacharya, Basabdatta, Coyle, Damien, Maguire, Liam: \n\"A thalamo-cortico-thalamic neural mass model to study alph"
-  "a rhythms in Alzheimer's \ndisease\", Neural Networks (2011), doi:10.1016/j.neunet.2011.02.009."
+  NotesPlugin		  "on"
+  Description		  "Author: Ali Najmaldin "
   EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
@@ -75,7 +72,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1566.0, 851.0]
+	Extents			[1261.0, 851.0]
 	ZoomFactor		[1.0]
 	Offset			[-102.47113586743137, -108.22381936915582]
       }
@@ -90,15 +87,15 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[640]
-	Height			[480]
+	Width			[300]
+	Height			[882]
 	Minimized		"On"
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABrAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABqAP///wAAAAEAAAEwAAADjvwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAZEAAADjgAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
+      "QBjAHQAbwByAAAAAEYAAAOOAAAAmQD///8AAAZEAAADjgAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
       "gBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIATABlAGYAdAMAAAAA/////wAAAAAAAAAAAAAAAQAAAAEAAAA4AGMAbwBsAGwAYQBwAHMAaQBiA"
       "GwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQDAAAAAP////8AAAAAAAAAAAAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
@@ -109,15 +106,14 @@ Model {
     }
   }
   HideAutomaticNames	  on
-  Created		  "Mon Nov 23 13:23:59 2009"
-  Creator		  "basabb"
+  Creator		  "Author: Ali Najmaldin"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "alinajmaldin"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Apr 11 18:23:17 2019"
-  RTWModifiedTimeStamp	  476903506
-  ModelVersionFormat	  "1.%<AutoIncrement:657>"
+  LastModifiedDate	  "Wed Apr 17 16:39:57 2019"
+  RTWModifiedTimeStamp	  477419984
+  ModelVersionFormat	  "1.%<AutoIncrement:658>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -173,11 +169,11 @@ Model {
     $PropName		    "DataLoggingOverride"
     $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "basab_thalamocorticothalamicCkt"
+    model_		    "increaseInputFullModule"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "basab_thalamocorticothalamicCkt"
+      Cell		      "increaseInputFullModule"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -1062,7 +1058,7 @@ Model {
     }
   }
   System {
-    Name		    "basab_thalamocorticothalamicCkt"
+    Name		    "increaseInputFullModule"
     Location		    [0, 23, 1680, 1050]
     Open		    on
     PortBlocksUseCompactNotation off
@@ -2235,7 +2231,7 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "basab_thalamocorticothalamicCkt"
+    name		    "increaseInputFullModule"
     sfVersion		    80000015
     firstTarget		    2
   }

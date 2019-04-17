@@ -1,4 +1,4 @@
-%% Time series plot
+%% Raw Time series plot of the baseline (basab_thalamocorticothalamicCkt)
 clear all, close all, clc;
 load('precompiledRuns/InitialRun_250Hz_60s.mat')
 t = corticaloutput.time;

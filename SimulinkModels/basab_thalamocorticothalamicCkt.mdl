@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.656"
+    ComputedModelVersion    "1.657"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -26,10 +26,7 @@ Model {
   DiagnosticSuppressor	  "on"
   LogicAnalyzerPlugin	  "on"
   NotesPlugin		  "on"
-  Description		  "THE MODEL IS DESIGNED BY BASABDATTA SEN BHATTACHARYA \nAND IS AN INTELLECTUAL PROPERTY OF THE UNIVER"
-  "SITY OF ULSTER, \nNORTHERN IRELAND, UK. \nPLEASE CITE THE FOLLOWING PAPER WHEN USING THE MODEL IN YOUR WORK:\nSen Bh"
-  "attacharya, Basabdatta, Coyle, Damien, Maguire, Liam: \n\"A thalamo-cortico-thalamic neural mass model to study alph"
-  "a rhythms in Alzheimer's \ndisease\", Neural Networks (2011), doi:10.1016/j.neunet.2011.02.009."
+  Description		  "Author: Ali Najmaldin"
   EnableAccessToBaseWorkspace on
   ScopeRefreshTime	  0.035000
   OverrideScopeRefreshTime on
@@ -50,7 +47,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [3074.0, 194.0, 2316.0, 1172.0]
+      Location		      [3102.0, 165.0, 2316.0, 1172.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -59,7 +56,7 @@ Model {
 	DockPosition		"Left"
 	Width			[50]
 	Height			[50]
-	Filter			[8]
+	Filter			[9]
 	Minimized		"On"
       }
       Object {
@@ -75,7 +72,7 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[2241.0, 996.0]
+	Extents			[1936.0, 996.0]
 	ZoomFactor		[1.0]
 	Offset			[-102.47113586743137, -108.22381936915582]
       }
@@ -90,15 +87,15 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[640]
-	Height			[480]
-	Minimized		"On"
+	Width			[300]
+	Height			[1027]
+	Minimized		"Off"
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABqAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABqAP///wAAAAEAAAEwAAAEH/wCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAjnAAAEHwAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
+      "QBjAHQAbwByAQAAAEYAAAQfAAAAmQD///8AAAe2AAAEHwAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
       "gBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIATABlAGYAdAMAAAAA/////wAAAAAAAAAAAAAAAQAAAAEAAAA4AGMAbwBsAGwAYQBwAHMAaQBiA"
       "GwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQCAAAAAP////8AAAAAAAAAAAAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
@@ -109,15 +106,14 @@ Model {
     }
   }
   HideAutomaticNames	  on
-  Created		  "Mon Nov 23 13:23:59 2009"
-  Creator		  "basabb"
+  Creator		  "aliNajmaldin"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "alinajmaldin"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Apr 07 01:01:28 2019"
-  RTWModifiedTimeStamp	  476491670
-  ModelVersionFormat	  "1.%<AutoIncrement:656>"
+  LastModifiedDate	  "Wed Apr 17 16:39:18 2019"
+  RTWModifiedTimeStamp	  477419923
+  ModelVersionFormat	  "1.%<AutoIncrement:657>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -787,7 +783,7 @@ Model {
 	      Version		      "19.0.0"
 	      Array {
 		Type			"Cell"
-		Dimension		19
+		Dimension		18
 		Cell			"IncludeMdlTerminateFcn"
 		Cell			"RemoveResetFunc"
 		Cell			"SuppressErrorStatus"
@@ -806,7 +802,6 @@ Model {
 		Cell			"GenerateAllocFcn"
 		Cell			"ExistingSharedCode"
 		Cell			"RemoveDisableFunc"
-		Cell			"CombineOutputUpdateFcns"
 		PropName		"DisabledProps"
 	      }
 	      Description	      ""
