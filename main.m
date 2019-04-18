@@ -92,7 +92,7 @@ load('precompiledRuns/increasedConnectivity.mat')
 filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
 [pxx f] = pwelch(filtered,1/2*fs,[],[],250);
 pxx = abs(pxx)./mean(pxx);
-plot(f,10*log10(pxx),'LineWidth', 3)
+plot(f,10*log10(pxx),'*')
 
 xlim([0 20])
 
@@ -102,14 +102,81 @@ xlabel('Frequency (Hz)','fontsize',14)
 ylabel('Relative Power Density','fontsize',14)
  title({'Power Spectrum when Increasing Overall Connectivity'},'fontsize',18)
 
-  %% Cortical Module Isolated Baseline
+  %% Cortical output: variation in the thalamic module
+
+ clear all, close all, clc;
+fs = 250;
+
+figure
+hold on
+load('precompiledRuns/InitialRun_250Hz_60s.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
+[pxx f] = pwelch(filtered,1/2*fs,[],[],250);
+pxx = abs(pxx)./mean(pxx);
+plot(f,10*log10(pxx),'LineWidth', 3)
+
+load('precompiledRuns/base2.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
+[pxx f] = pwelch(filtered,1/2*fs,[],[],250);
+pxx = abs(pxx)./mean(pxx);
+plot(f,10*log10(pxx),'LineWidth', 3)
+
+xlim([0 20])
+
+xlabel('Frequency (Hz)','fontsize',14)
+ylabel('Relative Power Density','fontsize',14)
+title({'Cortical Output when Varying Thalamic Parameters'},'fontsize',18)
+
+%% Full module Increased Input
 clear all, close all, clc;
 fs = 250;
 
 figure
 hold on
-load('precompiledRuns/isolatedCorticalBaseline.mat')
-filtered = bandpass(corticaloutput.signals.values, [1 50], fs)
+load('precompiledRuns/InitialRun_250Hz_60s.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
 [pxx f] = pwelch(filtered,1/2*fs,[],[],250);
-pxx = abs(pxx);
+pxx = abs(pxx)./mean(pxx);
 plot(f,10*log10(pxx),'LineWidth', 3)
+
+load('precompiledRuns/inhibatoryIN.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
+[pxx f] = pwelch(filtered,1/2*fs,[],[],250);
+pxx = abs(pxx)./mean(pxx);
+plot(f,10*log10(pxx),'LineWidth', 3)
+
+xlim([0 20])
+
+lgd = legend('Base value','Decrease in connectivity (60%)','location','best')
+lgd.FontSize = 14;
+xlabel('Frequency (Hz)','fontsize',14)
+ylabel('Relative Power Density','fontsize',14)
+title({'Power Spectrum when Decreasing Connectivity Inhibitory'},'fontsize',18)
+
+
+%% Full module Decreased Input
+clear all, close all, clc;
+fs = 250;
+
+figure
+hold on
+load('precompiledRuns/InitialRun_250Hz_60s.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
+[pxx f] = pwelch(filtered,1/2*fs,[],[],250);
+pxx = abs(pxx)./mean(pxx);
+plot(f,10*log10(pxx),'LineWidth', 3)
+
+load('precompiledRuns/fullModuleSlow.mat')
+filtered = bandpass(thalamicoutput.signals.values, [1 50], fs)
+[pxx f] = pwelch(filtered,1/2*fs,[],[],250);
+pxx = abs(pxx)./mean(pxx);
+scatter(f,10*log10(pxx),'*')
+
+xlim([0 20])
+
+lgd = legend('Base value','Decrease in connectivity (75%)','Decrease in connectivity (50%)','location','best')
+lgd.FontSize = 14;
+xlabel('Frequency (Hz)','fontsize',14)
+ylabel('Relative Power Density','fontsize',14)
+ title({'Power Spectrum when Reducing Inputs'},'fontsize',18)
+
